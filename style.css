@@ -14,6 +14,9 @@ body {
 header {
     height: 100vh;
     background-color: #212224;
+    background-image: url('img/intersecting-curves.svg');
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #insta-fit-logo {
@@ -23,14 +26,8 @@ header {
     transform: translateX(-50%);
 }
 
-header h1 {
-    font-size: 72px;
-    word-break: keep-all;
-}
-
 header h2 {
     color: #ff6600;
-    font-size: x-large;
 }
 
 #discover-more-button {
@@ -51,8 +48,52 @@ header h2 {
     padding: 16px;
 }
 
+@media(max-width: 550px) {
+    header h1 {
+        text-align: center;
+        font-size: 50px;
+        word-break: keep-all;
+    }
+
+    header h2 {
+        text-align: center;
+        color: #ff6600;
+        font-size: x-large;
+    }
+
+    #discover-more-button {
+        width: 70%;
+    }
+}
+
+@media(min-width: 550px) and (max-width: 1440px) {
+    header h1 {
+        text-align: center;
+        font-size: 72px;
+        word-break: keep-all;
+    }
+
+    header h2 {
+        text-align: center;
+        font-size: x-large;
+    }
+}
+
+@media(min-width: 1440px) {
+    header h1 {
+        font-size: 72px;
+        word-break: keep-all;
+        width: 50%;
+    }
+
+    header h2 {
+        font-size: x-large;
+        width: 50%;
+    }
+}
+
 #header-after {
-    height: 22vh;
+    min-height: 22vh;
     background-color: #101113;
     border-bottom: 4px solid #212224;
 }
@@ -71,13 +112,10 @@ section#features {
 }
 
 #features-nav {
-    background-color: #101113;
-    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
     width: fit-content;
-    border: 4px solid #212224;
-    top: -35px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 #features-nav .nav-item {
@@ -106,15 +144,49 @@ section#features {
     color: #101113;
 }
 
-#features-nav .nav-item:first-of-type {
-    border-top-left-radius: 36px;
-    border-bottom-left-radius: 36px;
+@media(max-width: 717px) {
+    #features-nav {
+        border-top: 2px solid #212224;
+        border-bottom: 2px solid #212224;
+        top: -2px;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    #features-nav .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
 }
 
-#features-nav .nav-item:last-of-type {
-    border-top-right-radius: 36px;
-    border-bottom-right-radius: 36px;
+@media(min-width: 717px) {
+    #features-nav {
+        border-radius: 50px;
+        border: 4px solid #212224;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #features-nav .nav-item:first-of-type {
+        border-top-left-radius: 36px;
+        border-bottom-left-radius: 36px;
+    }
+
+    #features-nav .nav-item:last-of-type {
+        border-top-right-radius: 36px;
+        border-bottom-right-radius: 36px;
+    }
+
 }
+
+
+
 
 #features-wrapper {
     overflow-x: hidden;
@@ -131,31 +203,104 @@ section#features {
 
 section#gyms {
     background-color: #212224;
+    background-image: url('img/steps-divider-round.svg');
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
-#clock-animation {
-    width: 120px;
-    height: 120px;
-    left: 42.5px;
-    top: 12%;
-    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+@media(max-width: 1600px) {
+    #clock-animation {
+        display: none;
+    }
+
+    #calendar-animation {
+        display: none;
+    }
+
+    #notification-animation {
+        display: none;
+    }
 }
 
-#calendar-animation {
-    width: 280px;
-    height: 280px;
-    right: -30px;
-    top: 40%;
-    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+@media(min-width: 1600px) {
+    #clock-animation {
+        width: 130px;
+        height: auto;
+        left: 30px;
+        top: 12%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    }
+
+    #calendar-animation {
+        width: 350px;
+        height: auto;
+        right: -60px;
+        top: 40%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    }
+
+    #notification-animation {
+        width: 110px;
+        height: 110px;
+        left: 25px;
+        bottom: 25%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+        transform: rotate(20deg);
+    }
 }
 
-#notification-animation {
-    width: 110px;
-    height: 110px;
-    left: 25px;
-    bottom: 25%;
-    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
-    transform: rotate(20deg);
+@media(min-width: 1800px) {
+    #clock-animation {
+        width: 230px;
+        height: auto;
+        left: 30px;
+        top: 12%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    }
+
+    #calendar-animation {
+        width: 450px;
+        height: auto;
+        right: -60px;
+        top: 40%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    }
+
+    #notification-animation {
+        width: 210px;
+        height: auto;
+        left: 25px;
+        bottom: 25%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+        transform: rotate(20deg);
+    }
+}
+
+@media(min-width: 2100px) {
+    #clock-animation {
+        width: 230px;
+        height: auto;
+        left: 6vw;
+        top: 12%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    }
+
+    #calendar-animation {
+        width: 600px;
+        height: auto;
+        right: -2vw;
+        top: 40%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    }
+
+    #notification-animation {
+        width: 220px;
+        height: auto;
+        left: 11vw;
+        bottom: 25%;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+        transform: rotate(20deg);
+    }
 }
 
 section#contact {
@@ -197,8 +342,8 @@ footer {
 
 #contactFormModal .modal-content {
     background-color: #101113;
+    border-color: 2px solid #ff6600;
 }
-
 
 #contactFormModal .modal-header {
     border: #101113;
