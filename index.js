@@ -2,17 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
 
     const featureButtons = document.querySelectorAll('[data-scroll-to]');
-    const scollToElements = {};
-    // const btn = document.getElementById('contactFormBtnOpener');
+    const features = [];
+    let previousFeatureIndex = 0;
 
     featureButtons.forEach((featureButton) => {
-        scollToElements[`${featureButton.dataset.scrollTo}`] = document.querySelector(featureButton.dataset.scrollTo);
+        features.push(document.querySelector(featureButton.dataset.scrollTo));
 
         featureButton.addEventListener('click', ({
             currentTarget,
         }) => {
             if (currentTarget) {
-
                 document.querySelectorAll('.nav-item').forEach((navItem) => {
                     if (navItem.dataset.scrollTo === currentTarget.dataset.scrollTo) {
                         navItem.classList.add('active');
@@ -21,7 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                scollToElements[`${featureButton.dataset.scrollTo}`]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                features.forEach((feature, index) => {
+                    if(feature.id === currentTarget.dataset.scrollTo.split('#')[1]) {
+                        feature.classList.add('d-block');
+                        feature.classList.remove('d-none');
+                        feature.dataset.aos = previousFeatureIndex > index ? 'slide-right' : 'slide-left';
+
+                        previousFeatureIndex = index;
+
+                        setTimeout(() => {
+                            feature.classList.add('aos-init', 'aos-animate');
+                        }, 0);
+                    } else {
+                        feature.classList.add('d-none');
+                        feature.classList.remove('aos-init', 'aos-animate');
+                    }
+                });
             }
         })
     });

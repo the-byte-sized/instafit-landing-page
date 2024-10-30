@@ -1,3 +1,7 @@
+::selection {
+    background-color: #ff6600;
+}
+
 :is(h1, h2, h3, h4, h5, h6) {
     color: white;
 }
@@ -108,7 +112,7 @@ footer {
 }
 
 section#features {
-    height: 78vh;
+    min-height: 78vh;
 }
 
 #features-nav {
@@ -183,18 +187,6 @@ section#features {
         border-bottom-right-radius: 36px;
     }
 
-}
-
-
-
-
-#features-wrapper {
-    overflow-x: hidden;
-    white-space: nowrap;
-}
-
-.feature {
-    white-space: normal;
 }
 
 .card-title {
