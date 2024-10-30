@@ -2,13 +2,23 @@
     color: white;
 }
 
+a {
+    color: #ff6600;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 header {
     height: 100vh;
     background-color: #212224;
 }
 
-header #logo-wrapper {
-    top: 50px;
+#insta-fit-logo {
+    position: absolute;
+    top: 35px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -23,9 +33,28 @@ header h2 {
     font-size: x-large;
 }
 
+#discover-more-button {
+    display: block;
+    margin: 0 auto;
+    --bs-btn-color: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: #ff6600;
+    --bs-btn-active-bg: #ff6600;
+    --bs-btn-hover-bg: #ff6600;
+    color: white;
+    background-color: #ff6600;
+    border-color: #ff6600;
+    border-radius: 50px;
+    width: 50%;
+    font-weight: bold;
+    padding: 16px;
+}
+
 #header-after {
-    height: 200px;
+    height: 22vh;
     background-color: #101113;
+    border-bottom: 4px solid #212224;
 }
 
 main {
@@ -37,12 +66,18 @@ footer {
     background-color: #101113;
 }
 
+section#features {
+    height: 78vh;
+}
+
 #features-nav {
     background-color: #101113;
     border-radius: 50px;
     width: fit-content;
-    margin: 0 auto;
-    border: 5px solid #212224;
+    border: 4px solid #212224;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #features-nav .nav-item {
@@ -67,7 +102,7 @@ footer {
     color: #101113;
 }
 
-#features-nav .nav-item:hover .nav-link{
+#features-nav .nav-item:hover .nav-link {
     color: #101113;
 }
 
@@ -92,4 +127,105 @@ footer {
 
 .card-title {
     color: #ff6600;
+}
+
+section#gyms {
+    background-color: #212224;
+}
+
+#clock-animation {
+    width: 120px;
+    height: 120px;
+    left: 42.5px;
+    top: 12%;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+}
+
+#calendar-animation {
+    width: 280px;
+    height: 280px;
+    right: -30px;
+    top: 40%;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+}
+
+#notification-animation {
+    width: 110px;
+    height: 110px;
+    left: 25px;
+    bottom: 25%;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, .5));
+    transform: rotate(20deg);
+}
+
+section#contact {
+    background-color: #212224;
+}
+
+section#gyms button {
+    color: white;
+    background-color: #ff6600;
+    border-color: #ff6600;
+    border-radius: 50px;
+    padding: 18px 25px;
+    font-size: x-large;
+    transition: all .25s ease-in-out;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 0 auto;
+}
+
+#submit-contact-form {
+    --bs-btn-color: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: #ff6600;
+    --bs-btn-active-bg: #ff6600;
+    --bs-btn-hover-bg: #ff6600;
+}
+
+.hvr-ripple-out:before {
+    border: #ff6600 solid 6px;
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #101113;
+}
+
+#contactFormModal .modal-content {
+    background-color: #101113;
+}
+
+
+#contactFormModal .modal-header {
+    border: #101113;
+
+}
+
+#contactFormModal .modal-title {
+    color: #ff6600;
+}
+
+@media(max-width:768px) {
+    #contactFormModal .modal-dialog {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        margin: 0;
+    }
+
+    #contactFormModal .modal-dialog .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+}
+
+@media(min-width:768px) {
+    #contactFormModal .modal-dialog {
+        max-width: 90vw;
+    }
 }

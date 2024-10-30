@@ -11,8 +11,8 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+      integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -43,238 +43,726 @@
         <div class="col d-flex align-items-center justify-content-center">
           <img
             src="https://deviceframes.com/static/b4a540155d1effab27f662c0fca670ec/cb576/iphone_animation.png"
+            class="img-fluid"
             alt=""
+            data-aos="slide-right"
           />
         </div>
 
         <div
           class="col d-flex align-items-center justify-content-start position-relative"
         >
-          <div
-            id="logo-wrapper"
-            class="d-flex flex-column gap-2 position-absolute"
-          >
-            <img
-              src="/img/instafit-thumbnail-white-2.png"
-              alt="InstaFit logo"
-              class="logo"
-              width="250"
-              height="196"
-            />
+          <div data-aos="slide-left">
 
-            <p class="text-center fs-1 fw-bold text-white mb-0">InstaFit</p>
-          </div>
 
-          <div class="w-50">
-            <h1>The first AI powered, social-oriented fitness app</h1>
+            <h1 class="w-50" >The first AI powered, social-oriented fitness app</h1>
 
-            <h2>
+            <h2 class="w-50" >
               Track exercises, get AI-driven health advice, and connect with
               your personal trainer — all in one tool.
             </h2>
+
+            <a
+            id="discover-more-button"
+            href="#header-after"
+            class="btn btn-primary btn-lg mt-5 hvr-shadow hvr-ripple-out"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-id="discover-more-button"
+          >
+            Discover more
+            <i class="fa-solid fa-chevron-right fa-fw hvr-icon"></i>
+            </a>
           </div>
+
+  
         </div>
       </div>
     </header>
 
-    <div id="header-after"></div>
-
-    <main>
-      <section id="features" class="container">
+    <div id="header-after">
+      <div class="container">
         <div class="mb-5 pt-5">
-          <p class="fw-bold mb-1" style="color: #ff6600">
+          <p class="fw-medium mb-1" style="color: #ff6600">
             Reimagining the workouts
           </p>
+
           <h1>With InstaFit you can become the better version of yourself</h1>
         </div>
+      </div>
+    </div>
 
-        <ul id="features-nav" class="nav justify-content-center">
-          <li class="nav-item active" data-scroll-to="#workouts-registration">
-            Workouts Registration
-          </li>
+    <main>
+      <section id="features" class="pt-5 pb-5 position-relative">
+        <img
+        id="insta-fit-logo"
+        src="/img/instafit-thumbnail-white-2.png"
+        alt="InstaFit logo"
+        class="logo"
+        width="190"
+        height="149"
+        data-aos="slide-down"
+      />
 
-          <li class="nav-item" data-scroll-to="#ai-driven-health-care">
-            AI-driven health advices
-          </li>
+        <div class="container">
+          <ul id="features-nav" class="nav justify-content-center position-absolute">
+            <li class="nav-item active" data-scroll-to="#workouts-registration">
+              Workouts Registration
+            </li>
+            <li class="nav-item" data-scroll-to="#ai-driven-health-care">
+              AI-driven health advices
+            </li>
+            <li class="nav-item" data-scroll-to="#personal-trainers">
+              Personal Trainers
+            </li>
+            <li class="nav-item" data-scroll-to="#socialize">Socialize</li>
+          </ul>
 
-          <li class="nav-item" data-scroll-to="#personal-trainers">
-            Personal Trainers
-          </li>
-
-          <li class="nav-item" data-scroll-to="#socialize">Socialize</li>
-        </ul>
-
-        <div id="features-wrapper">
-          <div
-            id="workouts-registration"
-            class="d-inline-block w-100 h-100 feature"
-          >
-            <p class="fs-3 fw-light mb-5">
-              Easily log your workouts with our intuitive tracking system,
-              designed to keep you focused on progress. Record exercises, track
-              sets, reps, and weights, and review detailed analytics that help
-              you optimize each session.
-            </p>
-
-            <div class="row row-gap-5">
-              <div class="col-xs-12 col-md-6">
-                <div class="d-flex align-items-center" data-aos="slide-right">
-                  <span class="fa-layers fa-fw fa-7x">
-                    <i class="fa-solid fa-square" style="color: #ff6600"></i>
-                    <i
-                      class="fa-solid fa-circle"
-                      data-fa-transform="shrink-5"
-                      style="color: white"
-                    ></i>
-                    <i
-                      class="fa-inverse fa-solid fa-list-check"
-                      data-fa-transform="shrink-10"
-                      style="color: #141517"
-                    ></i>
-                  </span>
-
-                  <div>
-                    <h5 class="card-title">Quick Log</h5>
-
-                    <p class="card-text mt-2 fw-lighter">
-                      Instantly record sets, reps, and weights with one tap.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <div class="card -front p-3">
-                  <div class="card-body">
-                    <div class="d-flex flex-column align-items-start row-gap-3">
-                      <span class="fa-layers fa-fw fa-7x">
-                        <i
-                          class="fa-solid fa-square"
-                          style="color: #ff6600"
-                        ></i>
-                        <i
-                          class="fa-solid fa-circle"
-                          data-fa-transform="shrink-5"
-                          style="color: white"
-                        ></i>
-                        <i
-                          class="fa-inverse fa-solid fa-address-book"
-                          data-fa-transform="shrink-10"
-                          style="color: #141517"
-                        ></i>
-                      </span>
+          <div id="features-wrapper">
+            <div
+              id="workouts-registration"
+              class="d-inline-block w-100 h-100 feature p-5"
+            >
+              <p class="fs-4 fw-light mb-5">
+                Easily log your workouts with our intuitive tracking system,
+                designed to keep you focused on progress. Record exercises,
+                track sets, reps, and weights, and review detailed analytics
+                that help you optimize each session.
+              </p>
+              <div class="row row-gap-5">
+                <div class="col-xs-12 col-md-6">
+                  <div class="d-flex align-items-center" data-aos="slide-right">
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-list-check"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
                       <h5 class="card-title">Quick Log</h5>
-                    </div>
-
-                    <p class="card-text mt-2">
+                      <p class="card-text mt-2 fw-lighter">
                         Instantly record sets, reps, and weights with one tap.
-                    </p>
+                      </p>
+                    </div>
                   </div>
-                </div> -->
-              </div>
-
-              <div class="col-xs-12 col-md-6">
-                <div
-                  class="d-flex align-items-center"
-                  data-aos="slide-left"
-                  data-aos-delay="200"
-                >
-                  <span class="fa-layers fa-fw fa-7x">
-                    <i class="fa-solid fa-square" style="color: #ff6600"></i>
-                    <i
-                      class="fa-solid fa-circle"
-                      data-fa-transform="shrink-5"
-                      style="color: white"
-                    ></i>
-                    <i
-                      class="fa-inverse fa-solid fa-chart-line"
-                      data-fa-transform="shrink-10"
-                      style="color: #141517"
-                    ></i>
-                  </span>
-
-                  <div>
-                    <h5 class="card-title">Progress Tracking</h5>
-
-                    <p class="card-text mt-2 fw-lighter">
-                      View progress over time with detailed charts and
-                      performance analytics.
-                    </p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="200"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-chart-line"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Progress Tracking</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        View progress over time with detailed charts and
+                        performance analytics.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-right"
+                    data-aos-delay="300"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-play"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Video Demos</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Access exercise demos and tutorials directly from the
+                        workout log.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-robot"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Personalized Suggestions</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Get AI-driven workout suggestions based on your logged
+                        activities and goals.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-xs-12 col-md-6">
-                <div
-                  class="d-flex align-items-center"
-                  data-aos="slide-right"
-                  data-aos-delay="300"
-                >
-                  <span class="fa-layers fa-fw fa-7x">
-                    <i class="fa-solid fa-square" style="color: #ff6600"></i>
-                    <i
-                      class="fa-solid fa-circle"
-                      data-fa-transform="shrink-5"
-                      style="color: white"
-                    ></i>
-                    <i
-                      class="fa-inverse fa-solid fa-play"
-                      data-fa-transform="shrink-10"
-                      style="color: #141517"
-                    ></i>
-                  </span>
-
-                  <div>
-                    <h5 class="card-title">Video Demos</h5>
-
-                    <p class="card-text mt-2 fw-lighter">
-                      Access exercise demos and tutorials directly from the
-                      workout log.
-                    </p>
+            </div>
+            <div
+              id="ai-driven-health-care"
+              class="d-inline-block w-100 h-100 feature p-5"
+            >
+              <p class="fs-4 fw-light mb-5">
+                Using advanced algorithms, InstaFit delivers custom
+                recommendations on nutrition, exercise, sleep, and stress
+                management. Users can track their health trends, receive
+                real-time feedback during workouts, and benefit from proactive
+                alerts about potential health risks. With a virtual health coach
+                and adaptive goals, this app makes staying fit and healthy more
+                efficient and personalized than ever.
+              </p>
+              <div class="row row-gap-5">
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-stethoscope"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Personalized Health Insights</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Leveraging AI to provide tailored health and fitness
+                        recommendations based on individual goals, activity
+                        levels, and personal data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-tablets"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">
+                        Smart Nutrition Recommendations
+                      </h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        AI-driven dietary advice that adapts to user
+                        preferences, allergies, and goals like weight loss,
+                        muscle gain, or improved energy levels.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-spa"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Daily Wellness Tips</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Receive daily, AI-generated wellness tips covering
+                        sleep, hydration, mental health, and physical activity
+                        tailored to user trends.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-magnifying-glass-chart"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Predictive Health Monitoring</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Proactively alerts users about potential health risks by
+                        analyzing historical health data, like heart rate, sleep
+                        patterns, and physical activity.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-xs-12 col-md-6">
-                <div
-                  class="d-flex align-items-center"
-                  data-aos="slide-left"
-                  data-aos-delay="400"
-                >
-                  <span class="fa-layers fa-fw fa-7x">
-                    <i class="fa-solid fa-square" style="color: #ff6600"></i>
-                    <i
-                      class="fa-solid fa-circle"
-                      data-fa-transform="shrink-5"
-                      style="color: white"
-                    ></i>
-                    <i
-                      class="fa-inverse fa-solid fa-robot"
-                      data-fa-transform="shrink-10"
-                      style="color: #141517"
-                    ></i>
-                  </span>
-
-                  <div>
-                    <h5 class="card-title">Personalized Suggestions</h5>
-
-                    <p class="card-text mt-2 fw-lighter">
-                      Get AI-driven workout suggestions based on your logged
-                      activities and goals.
-                    </p>
+            </div>
+            <div
+              id="personal-trainers"
+              class="d-inline-block w-100 h-100 feature p-5"
+            >
+              <p class="fs-4 fw-light mb-5">
+                InstaFit enables trainers to create customized workout and
+                nutrition plans, track client progress with AI-enhanced
+                insights, and conduct virtual sessions. With features like
+                real-time messaging, progress reporting, and motivational tools,
+                trainers can build stronger client relationships and support
+                their fitness goals effectively. Clients benefit from a library
+                of guided exercises and receive personalized feedback, making it
+                easy to stay motivated and engaged on their fitness journey.
+              </p>
+              <div class="row row-gap-5">
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-stethoscope"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">
+                        Virtual Personal Trainer Sessions
+                      </h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Live one-on-one virtual training sessions with certified
+                        personal trainers, customized to the user's fitness
+                        goals and schedule.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-tablets"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">
+                        In-App Messaging and Notifications
+                      </h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Direct messaging for clients and trainers to
+                        communicate, send reminders, and provide feedback on
+                        workouts and progress.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-spa"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Trainer Performance Dashboard</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        A dashboard with client statistics and performance
+                        metrics, helping trainers monitor engagement, session
+                        frequency, and client satisfaction.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-magnifying-glass-chart"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Session Feedback and Ratings</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Clients can rate sessions and leave feedback, providing
+                        trainers with insights to improve the experience and
+                        personalize future interactions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="socialize" class="d-inline-block w-100 h-100 feature p-5">
+              <p class="fs-4 fw-light mb-5">
+                An engaging social platform within InstaFit where users can
+                connect, share, and motivate each other. The community features
+                include a shared feed for updates and achievements, interactive
+                group challenges, and virtual workout buddy options. Users can
+                join interest-based groups, compete on leaderboards, and earn
+                badges. With messaging, event invites, and stories, the social
+                aspect enhances motivation and makes the fitness journey more
+                connected and enjoyable.
+              </p>
+              <div class="row row-gap-5">
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-stethoscope"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Community Feed</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        A social feed where users can share workout updates,
+                        achievements, and photos, and interact with others
+                        through likes, comments, and reactions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-tablets"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Challenge Groups</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Join or create group challenges (like daily steps,
+                        weight loss goals, or workout streaks) to compete and
+                        stay motivated with friends or other users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-spa"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Progress Sharing</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Users can share their fitness progress, stats, and
+                        achievements with the community or privately with
+                        selected friends.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center"
+                    data-aos="slide-left"
+                    data-aos-delay="400"
+                  >
+                    <span class="fa-layers fa-fw fa-7x">
+                      <i class="fa-solid fa-square" style="color: #ff6600"></i>
+                      <i
+                        class="fa-solid fa-circle"
+                        data-fa-transform="shrink-5"
+                        style="color: white"
+                      ></i>
+                      <i
+                        class="fa-inverse fa-solid fa-magnifying-glass-chart"
+                        data-fa-transform="shrink-10"
+                        style="color: #141517"
+                      ></i>
+                    </span>
+                    <div>
+                      <h5 class="card-title">Leaderboard and Badges</h5>
+                      <p class="card-text mt-2 fw-lighter">
+                        Leaderboards track performance in various categories,
+                        such as daily steps, calories burned, or workout
+                        duration, with badges awarded for milestones and
+                        achievements.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div
-            id="ai-driven-health-care"
-            class="d-inline-block w-100 h-100 feature"
-          >
-            <img
-              src="https://fitwill.app/_next/image?url=https%3A%2F%2Ffitwill.app%2Fapi%2Fimage%2F0263%3Fw%3D1024%26h%3D576&w=3840&q=75"
-              alt=""
-            />
+      <section id="gyms" class="position-relative pt-5 pb-5">
+        <dotlottie-player
+          id="clock-animation"
+          src="/img/clock-animation.lottie"
+          background="transparent"
+          speed="1"
+          direction="1"
+          playMode="normal"
+          autoplay
+          loop
+          class="position-absolute"
+          data-aos="slide-right"
+          data-aos-delay="100"
+        ></dotlottie-player>
+
+        <dotlottie-player
+          id="calendar-animation"
+          src="/img/calendar-animation.lottie"
+          background="transparent"
+          speed="1"
+          direction="1"
+          playMode="normal"
+          autoplay
+          loop
+          class="position-absolute"
+          data-aos="slide-left"
+          data-aos-delay="300"
+        ></dotlottie-player>
+
+        <dotlottie-player
+        id="notification-animation"
+        src="/img/notification.lottie"
+        background="transparent"
+        speed="1"
+        direction="1"
+        playMode="normal"
+        autoplay
+        loop
+        class="position-absolute"
+        data-aos="slide-right"
+        data-aos-delay="300"
+      ></dotlottie-player>
+
+        <div class="container">
+          <div class="mb-5 pt-5">
+            <p class="fw-medium mb-1" style="color: #ff6600">
+              Organize your day with us
+            </p>
+
+            <h1>
+              <!-- Whether you're a personal trainer or a gym, we help you streamline
+              your busy days. -->
+              Simplify your day, maximize productivity, and keep your business
+              running smoothly
+            </h1>
           </div>
+
+          <p class="fs-3 fw-light">
+            Our platform is crafted to be the comprehensive solution that every
+            personal trainer and gym needs to streamline daily operations and
+            maximize productivity. We know that managing a busy schedule,
+            catering to diverse client needs, and handling administrative tasks
+            can be overwhelming. That’s why we bring together all the tools
+            necessary to keep you organized and focused on what matters
+            most—helping clients reach their fitness goals and growing your
+            business.
+          </p>
+
+          <p class="fs-3 fw-light">
+            With our scheduling tools, you can easily book sessions, set
+            recurring appointments, and send automated reminders to both clients
+            and trainers, minimizing missed appointments and maximizing
+            attendance. The platform also offers detailed client profiles,
+            allowing you to track progress, set personalized goals, and store
+            notes from past sessions. This way, every client interaction is
+            meaningful and data-driven, tailored to their specific needs and
+            fitness journey.
+          </p>
+
+          <p class="fs-3 fw-light">
+            In addition to client management, we offer powerful tools to help
+            with business growth. Track your revenue, manage expenses, and set
+            monthly or quarterly financial goals directly from your dashboard.
+            For those who offer group classes, our platform makes it easy to
+            organize classes, register participants, and monitor attendance
+            trends—all in one place. You can even create waiting lists for
+            popular sessions and automatically notify clients when a spot opens
+            up. To further support your business, we’ve integrated marketing
+            tools that enable you to reach out to clients with personalized
+            messages, promote special offers, and celebrate milestones like
+            membership anniversaries. Automated engagement features keep clients
+            motivated and loyal, increasing retention and satisfaction. Our goal
+            is to simplify your day-to-day operations so that you can devote
+            more time to client interactions, program development, and your own
+            personal growth as a fitness professional.
+          </p>
+
+          <p class="fs-3 fw-light">
+            Whether you're a solo trainer managing a roster of clients or a gym
+            overseeing multiple trainers and classes, we provide the structure
+            you need to run an organized, efficient, and successful business
+          </p>
+
+          <p class="text-center mt-5 mb-5 fs-1 fw-bolder" data-aos="fade-down" style="color: #ff6600;">
+            Interested?
+          </p>
+
+          <button
+            class="btn btn-primary btn-lg"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-bs-toggle="modal"
+            data-bs-target="#contactFormModal"
+            data-aos-id="contact-form-button"
+          >
+            Get in touch with us to have a tailored experience
+            <i class="fa-solid fa-chevron-right fa-fw hvr-icon"></i>
+          </button>
         </div>
       </section>
     </main>
@@ -299,11 +787,102 @@
         </div>
       </div>
     </footer>
+
+    <div
+    class="modal fade"
+    id="contactFormModal"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="contactFormModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header" data-bs-theme="dark">
+          <h1 class="modal-title fs-7 ms-auto text-center" id="contactFormModalLabel">Sei ad un passo dal tuo prodotto!</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body p-5">
+          <form
+            method="post"
+            action="https://forms.un-static.com/forms/9d56e982f9a6191cc17f509007bfdc9bde86c384"
+          >
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailAddressInput"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    name="email"
+                  />
+                  <label for="emailAddressInput">Email address</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nameInput"
+                    placeholder="Claudio Carandente"
+                    autocomplete="name"
+                    name="name"
+                  />
+                  <label for="nameInput">Name</label>
+                </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Lascia un commento" id="commentsTextarea" style="height: 100px" name="message" ></textarea>
+              <label for="commentsTextarea">Comments</label>
+            </div>
+
+            <div class="col-lg-12 text-center">
+              <button
+                id="submit-contact-form"
+                type="submit"
+                class="btn btn-xl p-3"
+              >
+                Send message
+                <i class="fa fa-paper-plane ms-2" aria-hidden="true"></i>
+              </button>
+
+              <div class="text-center">
+                <p class="text-white">
+                  <small
+                    >(Powered by
+                    <a rel="nofollow" href="Un-static Forms"
+                      >Un-static Forms</a
+                    >)</small
+                  >
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 
   <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
+    integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
