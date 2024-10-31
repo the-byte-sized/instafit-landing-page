@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('aos:in:contact-form-button', ({ detail }) => {
-        detail.classList.add('hvr-ripple-out', 'hvr-shadow', 'hvr-icon-forward');
+        detail.classList.add('hvr-shadow', 'hvr-bob', 'hvr-icon-forward');
     });
 
     document.addEventListener('aos:in:discover-more-button', ({ detail }) => {
         console.log(detail);
-        detail.classList.add('hvr-ripple-out', 'hvr-shadow', 'hvr-icon-forward');
+        detail.classList.add('hvr-shadow', 'hvr-bob', 'hvr-icon-forward');
     });
 })
