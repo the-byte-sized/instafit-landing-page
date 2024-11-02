@@ -1,3 +1,8 @@
+.accordion-button::after {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+}
+
 ::selection {
     background-color: #ff6600;
     color: white;
@@ -33,10 +38,35 @@ header>div {
 }
 
 #insta-fit-logo {
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Monoton", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 100px;
+    color: #ff6600;
+    background: linear-gradient(150deg, #ff6600, #ff944e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width: 540px) {
+    #insta-fit-logo {
+        font-size: 80px;
+    }
+}
+
+@media(max-width: 413px) {
+    #insta-fit-logo {
+        font-size: 55px;
+    }
+}
+
+@media(min-width: 540px) {
+    #insta-fit-logo {
+        font-size: 100px;
+    }
 }
 
 header h2 {
