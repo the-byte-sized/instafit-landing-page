@@ -1,3 +1,35 @@
+#mockup-left {
+    bottom: 76px;
+    right: 55%;
+    z-index: 2;
+}
+
+#mockup-portrait {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+@media(max-width: 1366px) {
+    #mockup-left {
+        height: 425px;
+    }
+
+    #mockup-portrait {
+        height: 600px;
+    }
+}
+
+@media(min-width: 1366px) {
+    #mockup-left {
+        height: 600px;
+    }
+
+    #mockup-portrait {
+        height: 800px;
+    }
+
+}
+
 .accordion-button::after {
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);

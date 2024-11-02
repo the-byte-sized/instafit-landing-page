@@ -50,14 +50,26 @@
     <header class="container-fluid">
       <div class="row h-100">
         <div
-          class="col d-flex align-items-center justify-content-center d-none d-lg-flex h-100"
+          class="col d-flex align-items-center justify-content-center d-none d-lg-flex h-100 position-relative"
         >
-          <img
-            src="https://deviceframes.com/static/b4a540155d1effab27f662c0fca670ec/cb576/iphone_animation.png"
-            class="img-fluid mh-100"
-            alt=""
-            data-aos="slide-right"
-          />
+        <img
+          id="mockup-left"
+          src="/img/instafit-2-left.png"
+          class="img-fluid mh-100 position-absolute"
+          alt=""
+          data-aos="fade-right"
+          data-aos-delay="300"
+        />
+
+        <img
+        id="mockup-portrait"
+          src="/img/instafit-1-portrait.png"
+          class="img-fluid mh-100 position-absolute"
+          alt=""
+          data-aos="zoom-in-up"
+          data-aos-delay="150"
+        />
+
         </div>
 
         <div
@@ -66,9 +78,11 @@
           <div class="mw-100">
             <p id="insta-fit-logo" data-aos="slide-down">InstaFit</p>
 
-            <h1 data-aos="fade-down" data-aos-delay="200">The first AI powered, social-oriented fitness app</h1>
+            <h1 data-aos="fade-down" data-aos-delay="200">
+              The first AI powered, social-oriented fitness app
+            </h1>
 
-            <h2  data-aos="fade-up" data-aos-delay="300">
+            <h2 data-aos="fade-up" data-aos-delay="300">
               Track exercises, get AI-driven health advice, and connect with
               your personal trainer — all in one tool.
             </h2>
