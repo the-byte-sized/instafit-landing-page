@@ -54,7 +54,7 @@ body {
 }
 
 header {
-    height: 100vh;
+    height: 100dvh;
     background-repeat: no-repeat;
     background-image: url('img/background-bg.jpg');
     background-size: cover;
@@ -177,7 +177,7 @@ header h2 {
 }
 
 #header-after {
-    min-height: 22vh;
+    min-height: 22dvh;
     background-color: #101113;
     border-bottom: 4px solid #212224;
 }
@@ -192,7 +192,7 @@ footer {
 }
 
 section#features {
-    min-height: 78vh;
+    min-height: 78dvh;
 }
 
 section#faqs {
